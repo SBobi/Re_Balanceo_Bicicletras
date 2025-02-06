@@ -7,7 +7,6 @@
 import os
 import requests
 import pandas as pd
-import plotly.express as px
 import xml.etree.ElementTree as ET
 
 # --------------------------------------
@@ -23,8 +22,7 @@ def main():
     nr_stations = 300
     station_location_pre = retrieve_station_location_data()
     classic_trips = retrieve_trip_data(station_location_pre, nr_stations)
-    station_location = drop_unneeded_station_info(station_location_pre, classic_trips)
-    plot_station_locations(station_location, "nbDocks")
+    drop_unneeded_station_info(station_location_pre, classic_trips)
 
 # --------------------------------------
 # Estaciones
@@ -88,27 +86,9 @@ def drop_unneeded_station_info(station_locations, stations_in_saved_trips_data):
     station_locations = station_locations[~keys_df['Keys'].isin(stations2 - stations1)]
 
     # TODO
-    print(f"3 -- Se limpia el archivo de estaciones al retirar las {len(stations2 - stations1)} estaciones sin viajes.")
+    print(f"3 -- Se limpia el archivo de estaciones al retirar las {len(stations2 - stations1)} estaciones sin viajes.\n")
     os.makedirs('./process_data', exist_ok=True)
     station_locations.to_csv("./process_data/stations_all_info.csv", sep=',', index=False)
-
-    return station_locations
-
-def plot_station_locations(df, scale_name):
-
-    fig = px.scatter_map(
-        df,
-        lat="lat",
-        lon="long",
-        size=scale_name,
-        color="nbDocks",
-        hover_name="name",
-        size_max=15,
-        zoom=12,
-        #mapbox_style="open-street-map"
-    )
-
-    fig.show()
 
 # --------------------------------------
 # Viajes
@@ -120,7 +100,7 @@ def retrieve_trip_data(station_locations, nr_stations):
     folder = "./data/raw_data/"
 
     data = []
-    for i in range(391, 392):
+    for i in range(391, 395):
         new_data = pd.read_csv(os.path.join(folder, filename%i), parse_dates=["Start date", "End date"]).dropna() 
         data.append(new_data)
     data = pd.concat(data)
