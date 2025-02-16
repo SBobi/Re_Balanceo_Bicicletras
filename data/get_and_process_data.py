@@ -83,12 +83,15 @@ def drop_unneeded_station_info(station_locations, stations_in_saved_trips_data):
     
     keys_df = pd.DataFrame(index=station_locations.index)
     keys_df['Keys'] = list(zip(station_locations["terminalName"], station_locations["name"]))
-    station_locations = station_locations[~keys_df['Keys'].isin(stations2 - stations1)]
 
-    # TODO
+    filtered_stations = station_locations[~keys_df['Keys'].isin(stations2 - stations1)].copy()
+    filtered_stations.drop(columns=['nbBikes','nbStandardBikes','nbEBikes','nbEmptyDocks'], inplace=True)
+
     print(f"3 -- Se limpia el archivo de estaciones al retirar las {len(stations2 - stations1)} estaciones sin viajes.\n")
     os.makedirs('./process_data', exist_ok=True)
-    station_locations.to_csv("./process_data/stations_all_info.csv", sep=',', index=False)
+    filtered_stations.to_csv("./process_data/stations_all_info.csv", sep=',', index=False)
+    
+    return filtered_stations
 
 # --------------------------------------
 # Viajes
