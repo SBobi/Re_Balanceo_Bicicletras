@@ -19,7 +19,7 @@ def main():
     print("Getting and Processing Data")
     print("----------------------------\n")
 
-    nr_stations = 300
+    nr_stations = 30
     station_location_pre = retrieve_station_location_data()
     classic_trips = retrieve_trip_data(station_location_pre, nr_stations)
     drop_unneeded_station_info(station_location_pre, classic_trips)
@@ -155,7 +155,7 @@ def drop_trips_involving_incomplete_stations(data, station_locations):
     station_names_to_drop = stations_in_trips - stations_with_locations
 
     # TODO
-    print(f"Se retiran viajes que involucran {len(station_names_to_drop)} estaciones con información incompleta.")
+    print(f"Se retiran viajes que involucran {len(station_names_to_drop)-1} estaciones con información incompleta.")
 
     return drop_all_trips_with_stations(data, station_names_to_drop)
 
