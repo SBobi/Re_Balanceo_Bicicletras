@@ -1,31 +1,16 @@
-id,name,terminalName,lat,long,nbDocks
-193,"Bankside Mix, Bankside",963,51.50581776,-0.100186337,60
-119,"Bath Street, St. Luke's",964,51.52589324,-0.090847761,18
-132,"Bethnal Green Road, Shoreditch",973,51.52364804,-0.074754872,38
-24,"British Museum, Bloomsbury",981,51.51908011,-0.124678402,35
-62,"Cotton Garden Estate, Kennington",990,51.4907579,-0.106323685,24
-69,"Euston Road, Euston",983,51.5262363,-0.134407652,24
-55,"Finsbury Circus, Liverpool Street",984,51.51707521,-0.086685542,33
-51,"Finsbury Library , Finsbury",986,51.52671796,-0.104298194,29
-48,"Godliman Street, St. Paul's",971,51.51248445,-0.099141408,25
-54,"Golden Lane, Barbican",967,51.52174785,-0.094475072,27
-65,"Gower Place , Euston",969,51.52522753,-0.13518856,17
-15,"Great Russell Street, Bloomsbury",988,51.51772703,-0.127854211,26
-57,"Guilford Street , Bloomsbury",974,51.52334672,-0.120202614,32
-98,"Hampstead Road, Euston",972,51.52554222,-0.138231303,54
-67,"Hatton Garden, Holborn",985,51.51882555,-0.108028472,28
-66,"Holborn Circus, Holborn",982,51.51795029,-0.108657431,40
-194,"Hop Exchange, The Borough",960,51.50462759,-0.091773776,56
-76,"Longford Street, The Regent's Park",976,51.52559505,-0.144083893,21
-12,"Malet Street, Bloomsbury",980,51.52168078,-0.130431727,49
-195,"Milroy Walk, South Bank",959,51.50724437,-0.106237501,30
-63,"Murray Grove , Hoxton",989,51.53089041,-0.089782579,27
-156,"New Kent Road, The Borough",966,51.49443626,-0.092921165,33
-77,"Russell Square Station, Bloomsbury",978,51.52341837,-0.124121774,26
-13,"Scala Street, Fitzrovia",970,51.51991453,-0.136039674,21
-197,"Stamford Street, South Bank",962,51.50556905,-0.111606696,27
-148,"Tachbrook Street, Victoria",965,51.49211134,-0.138364847,16
-68,"Theobald's Road , Holborn",975,51.52059681,-0.116688468,26
-196,"Union Street, The Borough",961,51.50368837,-0.098497684,17
-316,"Warwick Row, Westminster",968,51.497998,-0.14296064,21
-42,"Wenlock Road , Hoxton",979,51.53099181,-0.093903825,28
+id,name,terminalName,lat,long,capacity,EndofDayBikes
+193,"Bankside Mix, Bankside",963,51.50581776,-0.100186337,5,3
+119,"Bath Street, St. Luke's",964,51.52589324,-0.090847761,2,2
+132,"Bethnal Green Road, Shoreditch",973,51.52364804,-0.074754872,3,2
+48,"Godliman Street, St. Paul's",971,51.51248445,-0.099141408,2,2
+54,"Golden Lane, Barbican",967,51.52174785,-0.094475072,3,2
+65,"Gower Place , Euston",969,51.52522753,-0.13518856,2,2
+98,"Hampstead Road, Euston",972,51.52554222,-0.138231303,5,3
+194,"Hop Exchange, The Borough",960,51.50462759,-0.091773776,5,3
+195,"Milroy Walk, South Bank",959,51.50724437,-0.106237501,3,2
+156,"New Kent Road, The Borough",966,51.49443626,-0.092921165,3,2
+13,"Scala Street, Fitzrovia",970,51.51991453,-0.136039674,2,2
+197,"Stamford Street, South Bank",962,51.50556905,-0.111606696,3,2
+148,"Tachbrook Street, Victoria",965,51.49211134,-0.138364847,2,2
+196,"Union Street, The Borough",961,51.50368837,-0.098497684,2,2
+316,"Warwick Row, Westminster",968,51.497998,-0.14296064,2,2

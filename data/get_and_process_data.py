@@ -6,6 +6,7 @@
 
 import os
 import requests
+import numpy as np
 import pandas as pd
 import xml.etree.ElementTree as ET
 
@@ -19,10 +20,10 @@ def main():
     print("Getting and Processing Data")
     print("----------------------------\n")
 
-    nr_stations = 30
+    nr_stations = 15
     station_location_pre = retrieve_station_location_data()
     classic_trips = retrieve_trip_data(station_location_pre, nr_stations)
-    drop_unneeded_station_info(station_location_pre, classic_trips)
+    drop_unneeded_station_info(station_location_pre, classic_trips, nr_stations)
 
 # --------------------------------------
 # Estaciones
@@ -76,7 +77,7 @@ def retrieve_station_location_data():
     
     return station_location
 
-def drop_unneeded_station_info(station_locations, stations_in_saved_trips_data):
+def drop_unneeded_station_info(station_locations, stations_in_saved_trips_data, nr_stations):
     
     stations1 = set(list(stations_in_saved_trips_data[["Start station number", "Start station"]].drop_duplicates().itertuples(index=False, name=None)))
     stations2 = set(list(station_locations[["terminalName", "name"]].itertuples(index=False, name=None)))
@@ -86,8 +87,14 @@ def drop_unneeded_station_info(station_locations, stations_in_saved_trips_data):
 
     filtered_stations = station_locations[~keys_df['Keys'].isin(stations2 - stations1)].copy()
     filtered_stations.drop(columns=['nbBikes','nbStandardBikes','nbEBikes','nbEmptyDocks'], inplace=True)
+    scaling_factor = nr_stations/station_locations.shape[0]/0.25
+    filtered_stations['nbDocks'] = (filtered_stations['nbDocks'] * scaling_factor).apply(np.ceil).astype(int)
+    filtered_stations.rename(columns={"nbDocks": "capacity"}, inplace=True)
 
-    print(f"3 -- Se limpia el archivo de estaciones al retirar las {len(stations2 - stations1)} estaciones sin viajes.\n")
+    filtered_stations["EndofDayBikes"] = filtered_stations["capacity"] * 0.6
+    filtered_stations["EndofDayBikes"] = filtered_stations["EndofDayBikes"].apply(np.ceil).astype(int)
+
+    print(f"3 -- Se limpia el archivo de estaciones al retirar las estaciones sin viajes.\n")
     os.makedirs('./process_data', exist_ok=True)
     filtered_stations.to_csv("./process_data/stations_all_info.csv", sep=',', index=False)
     
