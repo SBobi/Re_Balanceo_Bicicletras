@@ -20,7 +20,7 @@ def main():
     print("Getting and Processing Data")
     print("----------------------------\n")
 
-    nr_stations = 15
+    nr_stations = 800
     station_location_pre = retrieve_station_location_data()
     classic_trips = retrieve_trip_data(station_location_pre, nr_stations)
     drop_unneeded_station_info(station_location_pre, classic_trips, nr_stations)
