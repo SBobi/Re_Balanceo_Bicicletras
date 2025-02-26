@@ -1,0 +1,226 @@
+Origin,Destination,Distance_km
+"Bankside Mix, Bankside","Bankside Mix, Bankside",0.0
+"Bankside Mix, Bankside","Bath Street, St. Luke's",2.3239
+"Bankside Mix, Bankside","Bethnal Green Road, Shoreditch",2.651
+"Bankside Mix, Bankside","Godliman Street, St. Paul's",0.7448
+"Bankside Mix, Bankside","Golden Lane, Barbican",1.8149
+"Bankside Mix, Bankside","Gower Place , Euston",3.2441
+"Bankside Mix, Bankside","Hampstead Road, Euston",3.4265
+"Bankside Mix, Bankside","Hop Exchange, The Borough",0.5971
+"Bankside Mix, Bankside","Milroy Walk, South Bank",0.4478
+"Bankside Mix, Bankside","New Kent Road, The Borough",1.3618
+"Bankside Mix, Bankside","Scala Street, Fitzrovia",2.9348
+"Bankside Mix, Bankside","Stamford Street, South Bank",0.7909
+"Bankside Mix, Bankside","Tachbrook Street, Victoria",3.0508
+"Bankside Mix, Bankside","Union Street, The Borough",0.2641
+"Bankside Mix, Bankside","Warwick Row, Westminster",3.0858
+"Bath Street, St. Luke's","Bankside Mix, Bankside",2.3239
+"Bath Street, St. Luke's","Bath Street, St. Luke's",0.0
+"Bath Street, St. Luke's","Bethnal Green Road, Shoreditch",1.141
+"Bath Street, St. Luke's","Godliman Street, St. Paul's",1.5976
+"Bath Street, St. Luke's","Golden Lane, Barbican",0.5248
+"Bath Street, St. Luke's","Gower Place , Euston",3.0685
+"Bath Street, St. Luke's","Hampstead Road, Euston",3.2783
+"Bath Street, St. Luke's","Hop Exchange, The Borough",2.3655
+"Bath Street, St. Luke's","Milroy Walk, South Bank",2.3311
+"Bath Street, St. Luke's","New Kent Road, The Borough",3.5008
+"Bath Street, St. Luke's","Scala Street, Fitzrovia",3.1965
+"Bath Street, St. Luke's","Stamford Street, South Bank",2.6778
+"Bath Street, St. Luke's","Tachbrook Street, Victoria",4.9925
+"Bath Street, St. Luke's","Union Street, The Borough",2.5252
+"Bath Street, St. Luke's","Warwick Row, Westminster",4.7568
+"Bethnal Green Road, Shoreditch","Bankside Mix, Bankside",2.651
+"Bethnal Green Road, Shoreditch","Bath Street, St. Luke's",1.141
+"Bethnal Green Road, Shoreditch","Bethnal Green Road, Shoreditch",0.0
+"Bethnal Green Road, Shoreditch","Godliman Street, St. Paul's",2.0948
+"Bethnal Green Road, Shoreditch","Golden Lane, Barbican",1.3806
+"Bethnal Green Road, Shoreditch","Gower Place , Euston",4.1847
+"Bethnal Green Road, Shoreditch","Hampstead Road, Euston",4.3965
+"Bethnal Green Road, Shoreditch","Hop Exchange, The Borough",2.4208
+"Bethnal Green Road, Shoreditch","Milroy Walk, South Bank",2.8413
+"Bethnal Green Road, Shoreditch","New Kent Road, The Borough",3.483
+"Bethnal Green Road, Shoreditch","Scala Street, Fitzrovia",4.2604
+"Bethnal Green Road, Shoreditch","Stamford Street, South Bank",3.2472
+"Bethnal Green Road, Shoreditch","Tachbrook Street, Victoria",5.6283
+"Bethnal Green Road, Shoreditch","Union Street, The Borough",2.7614
+"Bethnal Green Road, Shoreditch","Warwick Row, Westminster",5.5149
+"Godliman Street, St. Paul's","Bankside Mix, Bankside",0.7448
+"Godliman Street, St. Paul's","Bath Street, St. Luke's",1.5976
+"Godliman Street, St. Paul's","Bethnal Green Road, Shoreditch",2.0948
+"Godliman Street, St. Paul's","Godliman Street, St. Paul's",0.0
+"Godliman Street, St. Paul's","Golden Lane, Barbican",1.0795
+"Godliman Street, St. Paul's","Gower Place , Euston",2.8686
+"Godliman Street, St. Paul's","Hampstead Road, Euston",3.0698
+"Godliman Street, St. Paul's","Hop Exchange, The Borough",1.0116
+"Godliman Street, St. Paul's","Milroy Walk, South Bank",0.762
+"Godliman Street, St. Paul's","New Kent Road, The Borough",2.0525
+"Godliman Street, St. Paul's","Scala Street, Fitzrovia",2.6836
+"Godliman Street, St. Paul's","Stamford Street, South Bank",1.1556
+"Godliman Street, St. Paul's","Tachbrook Street, Victoria",3.5359
+"Godliman Street, St. Paul's","Union Street, The Borough",0.9791
+"Godliman Street, St. Paul's","Warwick Row, Westminster",3.4341
+"Golden Lane, Barbican","Bankside Mix, Bankside",1.8149
+"Golden Lane, Barbican","Bath Street, St. Luke's",0.5248
+"Golden Lane, Barbican","Bethnal Green Road, Shoreditch",1.3806
+"Golden Lane, Barbican","Godliman Street, St. Paul's",1.0795
+"Golden Lane, Barbican","Golden Lane, Barbican",0.0
+"Golden Lane, Barbican","Gower Place , Euston",2.8432
+"Golden Lane, Barbican","Hampstead Road, Euston",3.0565
+"Golden Lane, Barbican","Hop Exchange, The Borough",1.9128
+"Golden Lane, Barbican","Milroy Walk, South Bank",1.8065
+"Golden Lane, Barbican","New Kent Road, The Borough",3.0388
+"Golden Lane, Barbican","Scala Street, Fitzrovia",2.883
+"Golden Lane, Barbican","Stamford Street, South Bank",2.1545
+"Golden Lane, Barbican","Tachbrook Street, Victoria",4.4818
+"Golden Lane, Barbican","Union Street, The Borough",2.0273
+"Golden Lane, Barbican","Warwick Row, Westminster",4.27
+"Gower Place , Euston","Bankside Mix, Bankside",3.2441
+"Gower Place , Euston","Bath Street, St. Luke's",3.0685
+"Gower Place , Euston","Bethnal Green Road, Shoreditch",4.1847
+"Gower Place , Euston","Godliman Street, St. Paul's",2.8686
+"Gower Place , Euston","Golden Lane, Barbican",2.8432
+"Gower Place , Euston","Gower Place , Euston",0.0
+"Gower Place , Euston","Hampstead Road, Euston",0.2134
+"Gower Place , Euston","Hop Exchange, The Borough",3.7778
+"Gower Place , Euston","Milroy Walk, South Bank",2.8305
+"Gower Place , Euston","New Kent Road, The Borough",4.5032
+"Gower Place , Euston","Scala Street, Fitzrovia",0.5937
+"Gower Place , Euston","Stamford Street, South Bank",2.7278
+"Gower Place , Euston","Tachbrook Street, Victoria",3.6889
+"Gower Place , Euston","Union Street, The Borough",3.4903
+"Gower Place , Euston","Warwick Row, Westminster",3.0752
+"Hampstead Road, Euston","Bankside Mix, Bankside",3.4265
+"Hampstead Road, Euston","Bath Street, St. Luke's",3.2783
+"Hampstead Road, Euston","Bethnal Green Road, Shoreditch",4.3965
+"Hampstead Road, Euston","Godliman Street, St. Paul's",3.0698
+"Hampstead Road, Euston","Golden Lane, Barbican",3.0565
+"Hampstead Road, Euston","Gower Place , Euston",0.2134
+"Hampstead Road, Euston","Hampstead Road, Euston",0.0
+"Hampstead Road, Euston","Hop Exchange, The Borough",3.9677
+"Hampstead Road, Euston","Milroy Walk, South Bank",3.0068
+"Hampstead Road, Euston","New Kent Road, The Borough",4.6686
+"Hampstead Road, Euston","Scala Street, Fitzrovia",0.6439
+"Hampstead Road, Euston","Stamford Street, South Bank",2.8856
+"Hampstead Road, Euston","Tachbrook Street, Victoria",3.7174
+"Hampstead Road, Euston","Union Street, The Borough",3.6694
+"Hampstead Road, Euston","Warwick Row, Westminster",3.0802
+"Hop Exchange, The Borough","Bankside Mix, Bankside",0.5971
+"Hop Exchange, The Borough","Bath Street, St. Luke's",2.3655
+"Hop Exchange, The Borough","Bethnal Green Road, Shoreditch",2.4208
+"Hop Exchange, The Borough","Godliman Street, St. Paul's",1.0116
+"Hop Exchange, The Borough","Golden Lane, Barbican",1.9128
+"Hop Exchange, The Borough","Gower Place , Euston",3.7778
+"Hop Exchange, The Borough","Hampstead Road, Euston",3.9677
+"Hop Exchange, The Borough","Hop Exchange, The Borough",0.0
+"Hop Exchange, The Borough","Milroy Walk, South Bank",1.0425
+"Hop Exchange, The Borough","New Kent Road, The Borough",1.136
+"Hop Exchange, The Borough","Scala Street, Fitzrovia",3.5033
+"Hop Exchange, The Borough","Stamford Street, South Bank",1.3767
+"Hop Exchange, The Borough","Tachbrook Street, Victoria",3.5126
+"Hop Exchange, The Borough","Union Street, The Borough",0.477
+"Hop Exchange, The Borough","Warwick Row, Westminster",3.619
+"Milroy Walk, South Bank","Bankside Mix, Bankside",0.4478
+"Milroy Walk, South Bank","Bath Street, St. Luke's",2.3311
+"Milroy Walk, South Bank","Bethnal Green Road, Shoreditch",2.8413
+"Milroy Walk, South Bank","Godliman Street, St. Paul's",0.762
+"Milroy Walk, South Bank","Golden Lane, Barbican",1.8065
+"Milroy Walk, South Bank","Gower Place , Euston",2.8305
+"Milroy Walk, South Bank","Hampstead Road, Euston",3.0068
+"Milroy Walk, South Bank","Hop Exchange, The Borough",1.0425
+"Milroy Walk, South Bank","Milroy Walk, South Bank",0.0
+"Milroy Walk, South Bank","New Kent Road, The Borough",1.6965
+"Milroy Walk, South Bank","Scala Street, Fitzrovia",2.4976
+"Milroy Walk, South Bank","Stamford Street, South Bank",0.4157
+"Milroy Walk, South Bank","Tachbrook Street, Victoria",2.7888
+"Milroy Walk, South Bank","Union Street, The Borough",0.6658
+"Milroy Walk, South Bank","Warwick Row, Westminster",2.7419
+"New Kent Road, The Borough","Bankside Mix, Bankside",1.3618
+"New Kent Road, The Borough","Bath Street, St. Luke's",3.5008
+"New Kent Road, The Borough","Bethnal Green Road, Shoreditch",3.483
+"New Kent Road, The Borough","Godliman Street, St. Paul's",2.0525
+"New Kent Road, The Borough","Golden Lane, Barbican",3.0388
+"New Kent Road, The Borough","Gower Place , Euston",4.5032
+"New Kent Road, The Borough","Hampstead Road, Euston",4.6686
+"New Kent Road, The Borough","Hop Exchange, The Borough",1.136
+"New Kent Road, The Borough","Milroy Walk, South Bank",1.6965
+"New Kent Road, The Borough","New Kent Road, The Borough",0.0
+"New Kent Road, The Borough","Scala Street, Fitzrovia",4.1148
+"New Kent Road, The Borough","Stamford Street, South Bank",1.7904
+"New Kent Road, The Borough","Tachbrook Street, Victoria",3.1567
+"New Kent Road, The Borough","Union Street, The Borough",1.0988
+"New Kent Road, The Borough","Warwick Row, Westminster",3.4866
+"Scala Street, Fitzrovia","Bankside Mix, Bankside",2.9348
+"Scala Street, Fitzrovia","Bath Street, St. Luke's",3.1965
+"Scala Street, Fitzrovia","Bethnal Green Road, Shoreditch",4.2604
+"Scala Street, Fitzrovia","Godliman Street, St. Paul's",2.6836
+"Scala Street, Fitzrovia","Golden Lane, Barbican",2.883
+"Scala Street, Fitzrovia","Gower Place , Euston",0.5937
+"Scala Street, Fitzrovia","Hampstead Road, Euston",0.6439
+"Scala Street, Fitzrovia","Hop Exchange, The Borough",3.5033
+"Scala Street, Fitzrovia","Milroy Walk, South Bank",2.4976
+"Scala Street, Fitzrovia","New Kent Road, The Borough",4.1148
+"Scala Street, Fitzrovia","Scala Street, Fitzrovia",0.0
+"Scala Street, Fitzrovia","Stamford Street, South Bank",2.3245
+"Scala Street, Fitzrovia","Tachbrook Street, Victoria",3.0958
+"Scala Street, Fitzrovia","Union Street, The Borough",3.1631
+"Scala Street, Fitzrovia","Warwick Row, Westminster",2.4836
+"Stamford Street, South Bank","Bankside Mix, Bankside",0.7909
+"Stamford Street, South Bank","Bath Street, St. Luke's",2.6778
+"Stamford Street, South Bank","Bethnal Green Road, Shoreditch",3.2472
+"Stamford Street, South Bank","Godliman Street, St. Paul's",1.1556
+"Stamford Street, South Bank","Golden Lane, Barbican",2.1545
+"Stamford Street, South Bank","Gower Place , Euston",2.7278
+"Stamford Street, South Bank","Hampstead Road, Euston",2.8856
+"Stamford Street, South Bank","Hop Exchange, The Borough",1.3767
+"Stamford Street, South Bank","Milroy Walk, South Bank",0.4157
+"Stamford Street, South Bank","New Kent Road, The Borough",1.7904
+"Stamford Street, South Bank","Scala Street, Fitzrovia",2.3245
+"Stamford Street, South Bank","Stamford Street, South Bank",0.0
+"Stamford Street, South Bank","Tachbrook Street, Victoria",2.3812
+"Stamford Street, South Bank","Union Street, The Borough",0.9311
+"Stamford Street, South Bank","Warwick Row, Westminster",2.3278
+"Tachbrook Street, Victoria","Bankside Mix, Bankside",3.0508
+"Tachbrook Street, Victoria","Bath Street, St. Luke's",4.9925
+"Tachbrook Street, Victoria","Bethnal Green Road, Shoreditch",5.6283
+"Tachbrook Street, Victoria","Godliman Street, St. Paul's",3.5359
+"Tachbrook Street, Victoria","Golden Lane, Barbican",4.4818
+"Tachbrook Street, Victoria","Gower Place , Euston",3.6889
+"Tachbrook Street, Victoria","Hampstead Road, Euston",3.7174
+"Tachbrook Street, Victoria","Hop Exchange, The Borough",3.5126
+"Tachbrook Street, Victoria","Milroy Walk, South Bank",2.7888
+"Tachbrook Street, Victoria","New Kent Road, The Borough",3.1567
+"Tachbrook Street, Victoria","Scala Street, Fitzrovia",3.0958
+"Tachbrook Street, Victoria","Stamford Street, South Bank",2.3812
+"Tachbrook Street, Victoria","Tachbrook Street, Victoria",0.0
+"Tachbrook Street, Victoria","Union Street, The Borough",3.0452
+"Tachbrook Street, Victoria","Warwick Row, Westminster",0.7278
+"Union Street, The Borough","Bankside Mix, Bankside",0.2641
+"Union Street, The Borough","Bath Street, St. Luke's",2.5252
+"Union Street, The Borough","Bethnal Green Road, Shoreditch",2.7614
+"Union Street, The Borough","Godliman Street, St. Paul's",0.9791
+"Union Street, The Borough","Golden Lane, Barbican",2.0273
+"Union Street, The Borough","Gower Place , Euston",3.4903
+"Union Street, The Borough","Hampstead Road, Euston",3.6694
+"Union Street, The Borough","Hop Exchange, The Borough",0.477
+"Union Street, The Borough","Milroy Walk, South Bank",0.6658
+"Union Street, The Borough","New Kent Road, The Borough",1.0988
+"Union Street, The Borough","Scala Street, Fitzrovia",3.1631
+"Union Street, The Borough","Stamford Street, South Bank",0.9311
+"Union Street, The Borough","Tachbrook Street, Victoria",3.0452
+"Union Street, The Borough","Union Street, The Borough",0.0
+"Union Street, The Borough","Warwick Row, Westminster",3.1421
+"Warwick Row, Westminster","Bankside Mix, Bankside",3.0858
+"Warwick Row, Westminster","Bath Street, St. Luke's",4.7568
+"Warwick Row, Westminster","Bethnal Green Road, Shoreditch",5.5149
+"Warwick Row, Westminster","Godliman Street, St. Paul's",3.4341
+"Warwick Row, Westminster","Golden Lane, Barbican",4.27
+"Warwick Row, Westminster","Gower Place , Euston",3.0752
+"Warwick Row, Westminster","Hampstead Road, Euston",3.0802
+"Warwick Row, Westminster","Hop Exchange, The Borough",3.619
+"Warwick Row, Westminster","Milroy Walk, South Bank",2.7419
+"Warwick Row, Westminster","New Kent Road, The Borough",3.4866
+"Warwick Row, Westminster","Scala Street, Fitzrovia",2.4836
+"Warwick Row, Westminster","Stamford Street, South Bank",2.3278
+"Warwick Row, Westminster","Tachbrook Street, Victoria",0.7278
+"Warwick Row, Westminster","Union Street, The Borough",3.1421
+"Warwick Row, Westminster","Warwick Row, Westminster",0.0

@@ -9,6 +9,8 @@ import requests
 import numpy as np
 import pandas as pd
 import xml.etree.ElementTree as ET
+import pandas as pd
+from math import radians, sin, cos, sqrt, asin
 
 # --------------------------------------
 # Main
@@ -20,10 +22,19 @@ def main():
     print("Getting and Processing Data")
     print("----------------------------\n")
 
-    nr_stations = 800
+    nr_stations = 250
     station_location_pre = retrieve_station_location_data()
     classic_trips = retrieve_trip_data(station_location_pre, nr_stations)
-    drop_unneeded_station_info(station_location_pre, classic_trips, nr_stations)
+    filtered_stations = drop_unneeded_station_info(station_location_pre, classic_trips, nr_stations)
+    save_station_location_data(classic_trips)
+    calculate_all_have_distances(filtered_stations)
+    N = filtered_stations['EndofDayBikes'].sum()
+    print(f"4 -- El sistema tiene {N} bicicletas en total.\n")
+    S = {"Bicicletas en sistema": N}
+
+    os.makedirs('./process_data', exist_ok=True)
+    with open('./process_data/total_bikes.txt', 'w') as f:
+        f.write(f"Bicicletas en sistema: {N}")
 
 # --------------------------------------
 # Estaciones
@@ -77,6 +88,10 @@ def retrieve_station_location_data():
     
     return station_location
 
+def save_station_location_data(classic_trips):
+    classic_trips.drop(columns=['Start station number', 'End station number', 'Bike number', 'Bike model'], inplace=True)
+    classic_trips.to_csv("./process_data/trips_all_info.csv", sep=',', index=False)
+
 def drop_unneeded_station_info(station_locations, stations_in_saved_trips_data, nr_stations):
     
     stations1 = set(list(stations_in_saved_trips_data[["Start station number", "Start station"]].drop_duplicates().itertuples(index=False, name=None)))
@@ -86,7 +101,7 @@ def drop_unneeded_station_info(station_locations, stations_in_saved_trips_data, 
     keys_df['Keys'] = list(zip(station_locations["terminalName"], station_locations["name"]))
 
     filtered_stations = station_locations[~keys_df['Keys'].isin(stations2 - stations1)].copy()
-    filtered_stations.drop(columns=['nbBikes','nbStandardBikes','nbEBikes','nbEmptyDocks'], inplace=True)
+    filtered_stations.drop(columns=['nbBikes','nbStandardBikes','nbEBikes','nbEmptyDocks', 'terminalName'], inplace=True)
     scaling_factor = nr_stations/station_locations.shape[0]/0.25
     filtered_stations['nbDocks'] = (filtered_stations['nbDocks'] * scaling_factor).apply(np.ceil).astype(int)
     filtered_stations.rename(columns={"nbDocks": "capacity"}, inplace=True)
@@ -126,8 +141,6 @@ def retrieve_trip_data(station_locations, nr_stations):
 
     # Filter the dataset
     classic_trips = filter_trips_data(data, station_locations, nr_stations)
-    classic_trips.to_csv("./process_data/trips_all_info.csv", sep=',', index=False)
-
     return classic_trips
 
 # Filter the data on certain criteria
@@ -192,6 +205,35 @@ def get_all_stations_info(raw_data):
     start_station_nr_to_name_mapping.update(end_station_nr_to_name_mapping)
     station_nr_to_name_mapping = pd.DataFrame(list(start_station_nr_to_name_mapping.items()), columns=['Station number', 'Station'])
     return station_nr_to_name_mapping
+
+# --------------------------------------
+# Parámetros
+# --------------------------------------
+
+def haversine_distance(lat1, lon1, lat2, lon2):
+
+    lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
+    dlat, dlon = lat2 - lat1, lon2 - lon1
+
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a))
+    return 6371 * c
+
+# 3.2 Generamos la tabla de distancias y ka pasamos a DataFrame.
+def calculate_all_have_distances(station_locations):
+    distances = []
+
+    for i, origin in station_locations.iterrows():
+        for j, destination in station_locations.iterrows():
+            distances.append({
+                'Origin': origin['name'],
+                'Destination': destination['name'],
+                'Distance_km': round(haversine_distance(origin['lat'], origin['long'], destination['lat'], destination['long']), 4)
+            })
+
+    distance_df = pd.DataFrame(distances)
+    distance_df.to_csv("./process_data/cost_rebalance_distance.csv", sep=',', index=False)
+
 
 # --------------------------------------
 # Run
